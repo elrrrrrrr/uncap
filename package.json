@@ -47,5 +47,6 @@
   },
   "engines": {
     "node": ">=8.0.0 <17"
-  }
+  },
+  "repository": "git@github.com:elrrrrrrr/for.git"
 }
