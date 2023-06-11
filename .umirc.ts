@@ -4,5 +4,6 @@ export default defineConfig({
   routes: [
     { path: "*", component: "index" },
   ],
-  npmClient: 'tnpm',
+  npmClient: 'yarn',
+  esbuildMinifyIIFE: true,
 });
