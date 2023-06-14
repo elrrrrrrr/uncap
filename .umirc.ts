@@ -6,4 +6,7 @@ export default defineConfig({
   ],
   npmClient: 'yarn',
   esbuildMinifyIIFE: true,
+  define: {
+    'process.env.NPM_REGISTRY': process.env.NPM_REGISTRY || 'https://registry.npmmirror.com',
+  },
 });
