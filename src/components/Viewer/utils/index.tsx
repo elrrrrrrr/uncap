@@ -2,7 +2,7 @@ import useSwr from 'swr';
 import useInfo from '@/hooks/useInfo';
 import { File, Directory } from './file-manager';
 
-const REGISTRY = 'https://registry.npmmirror.com';
+const REGISTRY = process.env.NPM_REGISTRY || 'https://registry.npmmirror.com';
 
 function sortFiles(files: (File | Directory)[]) {
   files.sort((a, b) => {
